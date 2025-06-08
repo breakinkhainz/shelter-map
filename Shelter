@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Houston Shelter Map</title>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <style>
+    #map { height: 500px; margin: 20px 0; }
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+    .mapboxgl-popup-content { font-family: Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <h1>Houston Shelter Map</h1>
+  <div id="map"></div>
+  <script>
+    // Use your actual GitHub repository and file path
+    const SHELTERS_JSON_URL = 'https://raw.githubusercontent.com/breakinkhainz/shelter-map/main/shelters.json';
+    // Set your Mapbox token
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYnJlYWtpbmtoYWlueiIsImEiOiJjbWJuNGVuc3Exank1MnJvaXRnaTN4aTVrIn0.KGhRVS_K6XRGQh_Y5RZzZA';
+
+    // Initialize the map
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v12',
+      center: [-95.3698, 29.7604], // Houston coordinates
+      zoom: 11
+    });
+
+    // Fetch your shelter data and add markers
+    fetch(SHELTERS_JSON_URL)
+      .then(response => response.json())
+      .then(shelters => {
+        shelters.forEach(shelter => {
+          const popup = new mapboxgl.Popup({ offset: 25 })
+            .setHTML(`<b>${shelter.name}</b><br>${shelter.address}` + (shelter.note ? `<br>${shelter.note}` : ''));
+
+          new mapboxgl.Marker()
+            .setLngLat([shelter.longitude, shelter.latitude])
+            .setPopup(popup)
+            .addTo(map);
+        });
+      })
+      .catch(error => console.error('Error:', error));
+  </script>
+</body>
+</html>
