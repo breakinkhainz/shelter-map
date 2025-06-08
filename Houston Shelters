@@ -1,0 +1,105 @@
+[
+  {
+    "name": "Star of Hope Mission - Men's Development Center",
+    "address": "1811 Ruiz St, Houston, TX 77002",
+    "latitude": 29.7549,
+    "longitude": -95.3625,
+    "type": "general"
+  },
+  {
+    "name": "Star of Hope Mission - Women & Family Development Center",
+    "address": "2575 Reed Rd, Houston, TX 77051",
+    "latitude": 29.6879,
+    "longitude": -95.3644,
+    "type": "general"
+  },
+  {
+    "name": "Salvation Army - Center of Hope for Men",
+    "address": "1717 Congress St, Houston, TX 77002",
+    "latitude": 29.7578,
+    "longitude": -95.3591,
+    "type": "general"
+  },
+  {
+    "name": "Salvation Army - Family Residence for Women and Children",
+    "address": "1603 McGowen St, Houston, TX 77004",
+    "latitude": 29.7361,
+    "longitude": -95.3712,
+    "type": "general,dv"
+  },
+  {
+    "name": "Mission of Yahweh",
+    "address": "10247 Algiers Rd, Houston, TX 77041",
+    "latitude": 29.8864,
+    "longitude": -95.5694,
+    "type": "general"
+  },
+  {
+    "name": "Open Door Mission Foundation",
+    "address": "5803 Harrisburg Blvd, Houston, TX 77011",
+    "latitude": 29.7369,
+    "longitude": -95.2980,
+    "type": "general"
+  },
+  {
+    "name": "SEARCH Homeless Services",
+    "address": "2015 Congress Ave, Houston, TX 77002",
+    "latitude": 29.7562,
+    "longitude": -95.3625,
+    "type": "general"
+  },
+  {
+    "name": "Harmony House",
+    "address": "602 Girard St, Houston, TX 77007",
+    "latitude": 29.7784,
+    "longitude": -95.3921,
+    "type": "general"
+  },
+  {
+    "name": "Coalition for the Homeless of Houston/Harris County",
+    "address": "2000 Crawford St, Suite 700, Houston, TX 77002",
+    "latitude": 29.7548,
+    "longitude": -95.3603,
+    "type": "general"
+  },
+  {
+    "name": "Houston Area Women’s Center",
+    "address": "Confidential (call hotline)",
+    "latitude": 29.7520,
+    "longitude": -95.3670,
+    "type": "dv",
+    "note": "Address confidential. Hotline: (713) 528-2121"
+  },
+  {
+    "name": "Bridge Over Troubled Waters",
+    "address": "Confidential (call hotline)",
+    "latitude": 29.7520,
+    "longitude": -95.3670,
+    "type": "dv",
+    "note": "Address confidential. Hotline: (713) 473-2801"
+  },
+  {
+    "name": "Freedom Place",
+    "address": "Confidential (call hotline)",
+    "latitude": 29.7520,
+    "longitude": -95.3670,
+    "type": "trafficking",
+    "note": "Address confidential. Hotline: (713) 686-3077"
+  },
+  {
+    "name": "United Against Human Trafficking (UAHT)",
+    "address": "Confidential (call hotline)",
+    "latitude": 29.7520,
+    "longitude": -95.3670,
+    "type": "trafficking",
+    "note": "Address confidential. Hotline: (713) 874-0290"
+  },
+  {
+    "name": "The Landing (YMCA of Greater Houston)",
+    "address": "Confidential (call hotline)",
+    "latitude": 29.7520,
+    "longitude": -95.3670,
+    "type": "youth,trafficking",
+    "note": "Address confidential. Hotline: (713) 659-5566"
+  }
+]
